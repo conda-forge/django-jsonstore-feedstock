@@ -2,15 +2,15 @@
 schema_version: 1
 
 context:
-  version: "0.5.1"
+  version: 26.7.0
 
 package:
   name: django-jsonstore
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/d/django-jsonstore/django-jsonstore-${{ version }}.tar.gz
-  sha256: fe49dd134b2c86ac434f77244be28102616783521c22de6d361879824b6d1a27
+  url: https://pypi.org/packages/source/d/django-jsonstore/django_jsonstore-${{ version }}.tar.gz
+  sha256: d777d373dbf2650c1ae52467640a429db8fe563202022b0f16d8c98fc015f142
 
 build:
   number: 0
@@ -24,9 +24,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - django
-    - six
-
+    - django >=5.2
 tests:
   - python:
       imports:
@@ -34,7 +32,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
 
 about:
   homepage: http://github.com/viewflow/jsonstore
