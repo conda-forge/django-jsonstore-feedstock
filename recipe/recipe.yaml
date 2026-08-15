@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 26.7.0
+  version: "26.8.0"
 
 package:
   name: django-jsonstore
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/django-jsonstore/django_jsonstore-${{ version }}.tar.gz
-  sha256: d777d373dbf2650c1ae52467640a429db8fe563202022b0f16d8c98fc015f142
+  sha256: d9663e1dff61ca9c8c1935d089d9c161e8f4cd897f5e71dc2682a9697046cbcc
 
 build:
   number: 0
